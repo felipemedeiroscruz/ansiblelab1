@@ -8,5 +8,5 @@ apt -y update
 apt -y install software-properties-common
 add-apt-repository --yes --update ppa:ansible/ansible
 apt update -y 
-apt install ansible
+apt install ansible -y
 apt -f install -y 
