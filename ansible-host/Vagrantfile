@@ -1,0 +1,8 @@
+# maquina com o ansible
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.network "private_network", ip: "192.168.2.10
+  config.vm.synced_folder "/home/felipe/My Projects/Ansible-lab-estudos/ansible-host/sync", "/ansible"
+  config.vm.provision "shell", path: "instala-nsible.sh"  
+end

@@ -1,0 +1,8 @@
+#database (Sem provisionamento tendo em vista que farei pelo ansible)
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.network "private_network", ip: "192.168.2.11
+  config.vm.synced_folder "/home/felipe/My Projects/Ansible-lab-estudos/ansible-host/sync", "/ansible"
+    
+end
